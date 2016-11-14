@@ -1,0 +1,24 @@
+{
+  "name": "yarsp",
+  "version": "0.0.1",
+  "description": "Yet Another React Starter Pack: A starter pack for ReactJS containing code splitting, testing and an api endpoint.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy9775/YARSP.git"
+  },
+  "keywords": [
+    "ReactJS",
+    "Express.js",
+    "Node"
+  ],
+  "author": "Andy Chrzaszcz <andy9775@gmail.com> (andyc.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andy9775/YARSP/issues"
+  },
+  "homepage": "https://github.com/andy9775/YARSP#readme"
+}
