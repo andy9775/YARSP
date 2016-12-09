@@ -1,0 +1,28 @@
+@import '../../shared/stylesheets/_shared.scss';
+$todo-container-margin: 20px;
+$todo-container-height: $navbutton-container-height + ($todo-container-margin * 3);
+
+.todos-container {
+  @extend .container-base;
+  width: 100%;
+}
+
+.todos-wrapper {
+  height: -webkit-calc(100% - #{$todo-container-height});
+  height:    -moz-calc(100% - #{$todo-container-height});
+  height:         calc(100% - #{$todo-container-height});
+  width: 50%;
+  max-width: 500px;
+
+  background-color: #666666;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  align-items: center;
+
+  border-radius: 2px;
+
+  margin: $todo-container-margin;
+
+  overflow: scroll;
+}

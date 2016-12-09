@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+
+    {{#if IS_DEV}}
+      <script type="application/javascript" src="/dist/vendor.bundle.js"></script>
+    {{/if}}
+
+    {{#unless IS_DEV}}
+      <link rel="stylesheet" type="text/css" href="/dist/styles.<%=htmlWebpackPlugin.files.chunks.common.hash%>.css">
+      <script type="application/javascript" src="/dist/vendor.<%=webpack.hash%>.bundle.js"></script>
+    {{/unless}}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    {{#if initialState}}
+      <script>window.__REDUX_STATE__ = {{{initialState}}}</script>
+    {{/if}}
+
+  </head>
+  
+  <body>
+
+    <div id="app">
+      <div>
+        {{{body}}}
+      </div>
+    </div>
+
+    {{#if IS_DEV}}
+     <script type="application/javascript" src="/dist/common.bundle.js"></script>
+    {{/if}}
+    {{#unless IS_DEV}}
+      <script type="application/javascript" src="/dist/common.<%=htmlWebpackPlugin.files.chunks.common.hash%>.bundle.js"></script>
+    {{/unless}}
+
+  </body>
+</html>

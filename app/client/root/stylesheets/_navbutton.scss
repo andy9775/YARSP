@@ -1,0 +1,25 @@
+@import './_navbar.scss';
+
+.navbutton-container {
+
+  flex: 1;
+  text-align: center;
+  background-color: #4e4e4f;
+  color: white;
+  height: $navbutton-container-height;
+  line-height: $navbutton-container-height;
+  cursor: pointer;
+
+  border: none;
+
+  font-size: 20px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #465f87;
+  }
+
+  &-active {
+    background-color: #4286f4;
+  }
+}

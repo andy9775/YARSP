@@ -1,0 +1,10 @@
+--timeout 3000
+--slow 175
+--recursive
+--prof
+--colors
+--compilers js:babel-core/register
+--require mocha-clean
+--full-trace
+--reporter spec
+test/**/*_spec.*.js

@@ -1,0 +1,10 @@
+$navbutton-container-height: 50px;
+
+.navbar-container {
+  width: 100%;
+  height: $navbutton-container-height;
+}
+
+.navbar-wrapper {
+  display: flex;
+}

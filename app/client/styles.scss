@@ -1,0 +1,13 @@
+@import './shared/stylesheets/_shared.scss';
+
+@import './root/stylesheets/_root.scss';
+@import './root/stylesheets/_navbar.scss';
+@import './root/stylesheets/_navbutton.scss';
+
+@import './home/stylesheets/_home.scss';
+
+@import './about/stylesheets/_about.scss';
+
+@import './todos/stylesheets/_todos.scss';
+@import './todos/stylesheets/_list_item.scss';
+@import './todos/stylesheets/_list_input.scss';

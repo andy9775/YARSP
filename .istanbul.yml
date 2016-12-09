@@ -1,0 +1,6 @@
+instrumentation:
+  root: .
+  extensions: ['.js', '.jsx']
+reporting:
+  reporters:
+    - lcovonly

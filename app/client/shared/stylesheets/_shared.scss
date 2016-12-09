@@ -1,0 +1,14 @@
+@import '../../root/stylesheets/_navbar.scss';
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #303030;
+}
+
+.container-base {
+  height: -webkit-calc(100% - #{$navbutton-container-height});
+  height:    -moz-calc(100% - #{$navbutton-container-height});
+  height:         calc(100% - #{$navbutton-container-height});
+  background-color: #565656;
+}

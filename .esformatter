@@ -1,0 +1,101 @@
+{
+  "preset": "default",
+
+  "plugins": [
+    "esformatter-jsx",
+    "esformatter-literal-notation",
+    "esformatter-parseint",
+    "esformatter-spaced-lined-comment",
+    "esformatter-var-each",
+    "esformatter-collapse-objects",
+    "esformatter-quote-props",
+    "esformatter-jquery-chain",
+    "esformatter-add-trailing-commas",
+    "esformatter-braces"
+  ],
+
+  "autoWrap": {
+   "maxLineLength": 80,
+   "eclipseCompatible": false
+ },
+
+  "quotes": {
+    "type": "single"
+  },
+
+  "collapseObjects": {
+    "ObjectExpression": {
+      "maxLineLength": 79,
+      "maxKeys": 1
+    }
+  },
+
+  "indent" : {
+    "value": "  ",
+    "AlignComments": true
+  },
+
+  "whiteSpace": {
+    "before": {
+      "ObjectExpressionClosingBrace": 1,
+      "ModuleSpecifierClosingBrace": 1,
+      "PropertyName": 1
+    },
+    "after": {
+      "ObjectExpressionOpeningBrace": 1,
+      "ModuleSpecifierOpeningBrace": 1
+    }
+  },
+
+  "ArrayExpression": {
+    "maxLineLength": 80,
+    "maxKeys": 3,
+    "maxDepth": 2,
+    "forbidden": []
+  },
+
+  "lineBreak": {
+    "before": {
+      "ArrayExpressionClosing": 1,
+      "EndOfFile": 1
+    },
+    "after": {
+      "ArrayExpressionOpening": 1,
+      "ArrayExpressionComma": 1
+    }
+  },
+
+  "jsx": {
+    // whether to recursively format jsx expressions with esformatter
+    // set this to false if you don't want JSXExpressions to be formatted recursively, like when using problematic plugins
+    "formatJSXExpressions": true,
+    // By default ObjectExpression and ArrayExpression in JSXExpressions are inlined,
+    // if false, the Expression might expand several lines
+    "JSXExpressionsSingleLine": true,
+    // by default is true if set to false it works the same as esformatter-jsx-ignore
+    "formatJSX": true,
+    // keep the node attributes on the same line as the open tag. Default is true.
+    // Setting this to false will put each one of the attributes on a single line
+    "attrsOnSameLineAsTag": false,
+     // how many attributes should the node have before having to put each
+     // attribute in a new line. Default 1
+    "maxAttrsOnTag": 1,
+    // if the attributes are going to be put each one on its own line, then keep the first
+    // on the same line as the open tag
+    "firstAttributeOnSameLine": true,
+    // default to one space. Make it empty if you don't like spaces between JSXExpressionContainers
+    "spaceInJSXExpressionContainers": "",
+    "removeSpaceBeforeClosingJSX": false,
+    "break-chained-methods": true,
+    // align the attributes with the first attribute (if the first attribute was kept on the same line as on the open tag)
+    "alignWithFirstAttribute": true,
+    "htmlOptions": { // same as the ones passed to js-beautifier.html
+      "brace_style": "collapse",
+      "indent_char": " ",
+      "indent_size": 2,
+      "max_preserve_newlines": 2,
+      "preserve_newlines": true,
+      "wrap_line_length": 65
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../shared/stylesheets/_shared.scss';
+
+.home-container {
+  @extend .container-base;
+  width: 100%;
+}
+
+.home-wrapper {
+  font-size: 20px;
+  text-align: center;
+  padding: 50px 0px 15px 15px;
+}
