@@ -3,6 +3,6 @@
  */
 
 import * as api from 'controllers/routes/api';
-import { frontEnd } from 'controllers/routes/frontEnd';
+import { frontEnd } from 'controllers/routes/frontend';
 
 export { api, frontEnd };

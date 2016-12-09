@@ -2,7 +2,7 @@
  * Mock front end express rout config
  */
 import express from 'express';
-import renderPage from 'controllers/frontEnd';
+import renderPage from 'controllers/frontend';
 import { routes, routeReducerMapping, buildRootReducer } from 'test/core/mocks';
 
 const frontEnd = express.Router();

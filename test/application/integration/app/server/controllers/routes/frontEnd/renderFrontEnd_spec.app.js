@@ -55,7 +55,7 @@ describe('Test front end page rendering for defined front end routes',
       mockery.registerMock('immutable', ImmutableMock);
 
       // eslint-disable-next-line global-require
-      const frontEnd = require('controllers/routes/frontEnd').frontEnd;
+      const frontEnd = require('controllers/routes/frontend').frontEnd;
 
       app.use('/', frontEnd);
     });

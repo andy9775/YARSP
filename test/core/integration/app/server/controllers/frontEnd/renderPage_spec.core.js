@@ -4,7 +4,7 @@
 import { expect } from 'chai';
 import { mockReq, mockRes } from 'sinon-express-mock';
 import mute from 'test/mute';
-import renderPage from 'controllers/frontEnd';
+import renderPage from 'controllers/frontend';
 import { routes, routeReducerMapping, buildRootReducer } from 'test/core/mocks';
 
 // pre-configure the renderPage function with mocked config data

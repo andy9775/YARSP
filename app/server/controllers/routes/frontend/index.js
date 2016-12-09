@@ -5,10 +5,10 @@
  * appropriate page.
  */
 import express from 'express';
-import renderPage from 'controllers/frontEnd';
+import renderPage from 'controllers/frontend';
 import { routes } from 'shared';
 // eslint-disable-next-line max-len
-import routeReducerMapping from 'controllers/routes/frontEnd/routeReducerMapping';
+import routeReducerMapping from 'controllers/routes/frontend/routeReducerMapping';
 import buildRootReducer from 'client/buildRootReducer';
 
 const router = express.Router();
